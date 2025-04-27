@@ -1,0 +1,378 @@
+/* ================= General Styles ================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    transition: background 0.3s, color 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================= Link Styles ================= */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #03c4cc;
+}
+
+/* ================= Header & Hero Section ================= */
+
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('Stock/background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin: 10px 0 5px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #dddddd;
+}
+
+.resume-btn {
+    background-color: #00adb5;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #03c4cc;
+}
+
+#typed-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Optional: Smooth Fade Animation */
+.hero, .profile-img, h1, p, .resume-btn {
+    animation: fadeIn 1.5s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= Navbar ================= */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.3s forwards;
+}
+.navbar li {
+    margin: 0 20px;
+}
+.navbar a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navbar a:hover {
+    color: #00adb5;
+}
+
+/* ================= Section Styles ================= */
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    color: #f1f1f1;
+}
+h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #00adb5;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #f1f1f1;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+/* ================= Tech Icons ================= */
+.tech-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    flex-wrap: nowrap;        
+}
+
+.tech-item {
+    text-align: center;
+    margin: 10px;           
+}
+
+.tech-icons img {
+    width: 90px;
+    margin-bottom: 5px;    
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1.7;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.tech-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #f1f1f1;            
+}
+
+
+/* ================= Projects ================= */
+.project-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+.project-card h3 {
+    margin-top: 0;
+    color: #f1f1f1;
+}
+.project-card a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #00adb5;
+    font-weight: bold;
+}
+.project-card a:hover {
+    color: #03c4cc;
+}
+
+/* ================= Footer ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ================= Scroll Animations ================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-heading h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ================= VIDEOS SECTION ================= */
+.video-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.video-card {
+    flex: 0 0 auto;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.video-card h3 {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ================= Contact Section ================= */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #1e1e1e; /* dark mode */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #555;
+    border-radius: 0.5rem;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b5cf6; /* violet */
+    box-shadow: 0 0 0 2px #8b5cf6;
+}
+
+.contact-submit-btn {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    background-color: #7c3aed;
+}
+
+/* ================= Responsive Styles ================= */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-icons img {
+        width: 40px;
+    }
+    .project-card {
+        padding: 15px;
+    }
+    .resume-btn {
+        padding: 8px 14px;
+    }
+    form {
+        width: 100%;
+    }
+}

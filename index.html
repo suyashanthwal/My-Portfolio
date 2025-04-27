@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#121212">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <img src="Stock/Profiel_Picture.jpg" alt="Suyash Anthwal Profile Picture" class="profile-img">
+        <h2>My Name is</h2>
+        <h1>Suyash Anthwal</h1>
+        <p>Web Developer | Programmer | Tech Enthusiast</p>
+        <a href="Stock\resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        <p id="typed-text"></p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#videos">Q&A</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
+            <p>Hello! I'm a passionate developer with a keen interest in building efficient and scalable applications. I love solving problems and continuously learning new technologies.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="tech-icons">
+                <div class="tech-item">
+                    <img src="Stock/html.png" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+                <div class="tech-item">
+                    <img src="Stock/css-3.png" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="tech-item">
+                    <img src="Stock/java.png" alt="Java Logo">
+                    <p>Java</p>
+                </div>
+                <div class="tech-item">
+                    <img src="Stock/python.png" alt="Python Logo">
+                    <p>Python</p>
+                </div>
+                <div class="tech-item">
+                    <img src="Stock/c-.png" alt="C++ Logo">
+                    <p>C++</p>
+                </div>
+                <div class="tech-item">
+                    <img src="Stock/letter-c.png" alt="C Logo">
+                    <p>C</p>
+                </div>
+                <div class="tech-item">
+                    <img src="Stock/mysql-database.png" alt="MySQL Logo">
+                    <p>MySQL</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-card">
+                <h3>Amazon Clone</h3>
+                <p>This is a clone of Amazon’s shopping platform built using HTML, CSS, and JavaScript. Features include user authentication, product search, and cart functionality.</p>
+                <a href="https://github.com/suyashanthwal/amazon-clone" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>This weather app allows users to check current weather conditions for any city using the OpenWeather API. Built with JavaScript and API integration.</p>
+                <a href="https://github.com/suyashanthwal/weather-app" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div class=" project-card">
+                <h3>Secure File transfer with Encryption</h3>
+                <p>A secure file transfer application that uses AES encryption to protect data during transmission. It features a user authentication system connected to a MySQL database and enables encrypted file sharing between devices over a socket-based network.</p>
+                <a href="https://github.com/suyashanthwal/Cyber-Project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div class=" project-card">
+                <h3>Intelligent Emergency Vehicle Priority System</h3>
+                <p>A smart traffic management system that uses Dijkstra’s algorithm to find the fastest route for emergency vehicles and dynamically controls traffic signals using hashing techniques, ensuring quicker and safer passage through city roads.</p>
+                <a href="https://github.com/suyashanthwal/DAA-Project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="videos" class="section">
+            <div class="section-heading">
+                <h2>Q&A Videos</h2>
+            </div>
+            <div class="video-scroll-container">
+                <div class="video-card">
+                    <video controls>
+                        <source src="Stock\presentation.mp4" type="video/mp4" loading="lazy">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Presentation</h3>
+                </div>
+        
+                <div class="video-card">
+                    <video controls>
+                        <source src="Stock\GD.MOV" type="video/mp4" loading="lazy">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Group Discussion</h3>
+                </div>
+        
+                <div class="video-card">
+                    <video controls>
+                        <source src="videos/answer3.mp4" type="video/mp4" loading="lazy">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>What are your future goals?</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-form-container">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+        
+                    <button type="submit" class="contact-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Suyash Anthwal. All rights reserved.</p>
+    </footer>
+    <script>
+        // Typed text effect
+        const text = "Welcome to my portfolio!";
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 80);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
+</body>
+
+</html>
