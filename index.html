@@ -10,6 +10,26 @@
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#tech-stack">tech-stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    
+        <div class="social-menu" id="socialMenu">
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/suyashanthwal/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/suyashanthwal" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </nav>
+    
+
     <header class="hero">
         <img src="Stock/Profiel_Picture.jpg" alt="Suyash Anthwal Profile Picture" class="profile-img">
         <h2>My Name is</h2>
@@ -19,16 +39,6 @@
         <p id="typed-text"></p>
     </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#videos">Q&A</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
         <section id="about" class="section">
             <div class="section-heading">
@@ -37,47 +47,79 @@
             <p>Hello! I'm a passionate developer with a keen interest in building efficient and scalable applications. I love solving problems and continuously learning new technologies.</p>
         </section>
 
-        <section id="skills" class="section">
+        <section id="tech-stack" class="section">
             <div class="section-heading">
-                <h2>Skills</h2>
+                <h2>Tech Stack & Tools</h2>
             </div>
-            <div class="tech-icons">
-                <div class="tech-item">
-                    <img src="Stock/html.png" alt="HTML Logo">
-                    <p>HTML</p>
-                </div>
-                <div class="tech-item">
-                    <img src="Stock/css-3.png" alt="CSS Logo">
-                    <p>CSS</p>
-                </div>
-                <div class="tech-item">
-                    <img src="Stock/java.png" alt="Java Logo">
-                    <p>Java</p>
-                </div>
-                <div class="tech-item">
-                    <img src="Stock/python.png" alt="Python Logo">
-                    <p>Python</p>
-                </div>
-                <div class="tech-item">
-                    <img src="Stock/c-.png" alt="C++ Logo">
-                    <p>C++</p>
-                </div>
-                <div class="tech-item">
-                    <img src="Stock/letter-c.png" alt="C Logo">
-                    <p>C</p>
-                </div>
-                <div class="tech-item">
-                    <img src="Stock/mysql-database.png" alt="MySQL Logo">
-                    <p>MySQL</p>
+        
+            <div class="tech-category">
+                <h3>Languages</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="Stock/c-.png" alt="C++">
+                        <p>C++</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/letter-c.png" alt="C">
+                        <p>C</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/java.png" alt="Java">
+                        <p>Java</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/python.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/html.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/css-3.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
                 </div>
             </div>
-            
+        
+            <div class="tech-category">
+                <h3>Databases</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="Stock/mysql-database.png" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                    <!-- Add MongoDB or others later if needed -->
+                </div>
+            </div>
+        
+            <div class="tech-category">
+                <h3>Tools & Platforms</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="Stock\icons8-vs-code-480.png" alt="VS Code">
+                        <p>VS Code</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/git.png" alt="Git">
+                        <p>Git</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock/github.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="Stock\icons8-canva-240.png" alt="Figma">
+                        <p>Canva</p>
+                    </div>
+                </div>
+            </div>
+        
         </section>
-
+        
         <section id="projects" class="section">
             <div class="section-heading">
                 <h2>Projects</h2>
-            </div>
             <div class="project-card">
                 <h3>Amazon Clone</h3>
                 <p>This is a clone of Amazon’s shopping platform built using HTML, CSS, and JavaScript. Features include user authentication, product search, and cart functionality.</p>
@@ -102,7 +144,7 @@
 
         <section id="videos" class="section">
             <div class="section-heading">
-                <h2>Q&A Videos</h2>
+                <h2>Videos</h2>
             </div>
             <div class="video-scroll-container">
                 <div class="video-card">
@@ -130,33 +172,6 @@
                 </div>
             </div>
         </section>
-        
-        <section id="contact" class="section">
-            <div class="section-heading">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-form-container">
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Your Email">
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
-                    </div>
-        
-                    <button type="submit" class="contact-submit-btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-        
     </main>
 
     <footer>
@@ -175,6 +190,17 @@
         }
         window.onload = typeWriter;
     </script>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const socialMenu = document.getElementById('socialMenu');
+
+    hamburger.addEventListener('click', () => {
+        socialMenu.classList.toggle('active');
+    });
+</script>
+
+
 </body>
 
 </html>
