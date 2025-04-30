@@ -1130,8 +1130,11 @@ footer {
 }
 
 .image-div img {
-    height: 100%;
-    border-top-left-radius: 30px;
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain the height */
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 30px; /* Apply border-radius to all corners */
+    overflow: hidden; /* Ensure the corners are clipped */
 }
 
 .ProjectHeading {
@@ -1197,8 +1200,12 @@ footer {
 }
 
 .image-div img {
-    height: 100%;
-    border-top-left-radius: 30px
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain the height */
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 30px; /* Apply border-radius to all corners */
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .ProjectHeading {
