@@ -1352,6 +1352,66 @@ footer {
   }
   
 
+
+  .video-scroll-arrow {
+    position: absolute;
+    top: 55%; /* Vertically center */
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    background: rgba(128,0,255,0.8);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, opacity 0.2s;
+    opacity: 0.8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .left-arrow {
+    left: -60px; /* Adjust as needed for spacing */
+  }
+  .right-arrow {
+    right: -60px; /* Adjust as needed for spacing */
+  }
+
+  .video-scroll-arrow:hover {
+    background: rgba(128,0,255,1);
+    opacity: 1;
+  }
+  
+  /* Make sure .videos-section-div is relatively positioned for absolute arrows */
+  .videos-section-div {
+    position: relative;
+  }
+
+  @media (max-width: 1200px) {
+    .left-arrow { left: -35px;}
+    .right-arrow { right: -35px;}
+  }
+  @media (max-width: 768px) {
+    .left-arrow, .right-arrow { 
+      left: 0; right: 0;
+      top: 100%;
+      transform: translateY(0);
+      margin-top: 10px;
+      position: static;
+      display: inline-block;
+    }
+    .videos-section-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  } 
+  
+
   /*--------------------------------*/
 
 .github-redirect {
