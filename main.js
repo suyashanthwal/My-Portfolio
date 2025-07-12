@@ -72,10 +72,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-console.log(
-    "%c Designed and Developed by Vinod Jangid ",
-    "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;"
-);
 
 let mybutton = document.getElementById("backtotopbutton");
 
@@ -138,30 +134,3 @@ const windowResize = e => {
 
 window.addEventListener("mousemove", mouseMove);
 window.addEventListener("resize", windowResize);
-
-document.addEventListener("DOMContentLoaded", function () {
-    const scrollContainer = document.querySelector('.videos-scroll-container');
-    const leftArrow = document.getElementById('videoLeftArrow');
-    const rightArrow = document.getElementById('videoRightArrow');
-    // Find one video card to get its width (including gap)
-    const card = scrollContainer.querySelector('.video-box');
-    const gap = parseInt(getComputedStyle(scrollContainer).gap) || 0;
-    const cardWidth = card ? card.offsetWidth + gap : 320 + gap;
-  
-    leftArrow.addEventListener('click', function() {
-      scrollContainer.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-    });
-    rightArrow.addEventListener('click', function() {
-      scrollContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
-    });
-  
-    // Optional: Disable arrows at ends
-    function updateArrows() {
-      leftArrow.disabled = scrollContainer.scrollLeft <= 0;
-      rightArrow.disabled = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 1;
-    }
-    scrollContainer.addEventListener('scroll', updateArrows);
-    window.addEventListener('resize', updateArrows);
-    updateArrows();
-  });
-  
