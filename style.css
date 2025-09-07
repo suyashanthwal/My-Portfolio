@@ -1079,13 +1079,7 @@ noscript {
     letter-spacing: .5px;
     font-size: 1.6rem;
     backdrop-filter: blur(5px);
-    font-weight: 500;
-    color: var(--color-white); /* Dynamic color for dark mode */
-}
-
-/* Light mode tooltip color */
-.light-mode .tooltip {
-    color: var(--color-white); /* In light mode, --color-white is actually black */
+    font-weight: 500
 }
 
 .cta,
@@ -1136,13 +1130,17 @@ footer {
 }
 
 .image-div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    overflow: hidden; 
-    max-width: 100%; 
-    max-height: 100%;
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain the height */
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 30px; /* Apply border-radius to all corners */
+    overflow: hidden; /* Ensure the corners are clipped */
+    max-width: 100%; /* Prevent overflow */
+    max-height: 100%; /* Prevent overflow */
+}
+
+#project-box4 .image-div img[src*="daa.png"] {
+  object-position: -15px center; /* Moves the image 10px to the right */
 }
 
 .ProjectHeading {
